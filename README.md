@@ -1,29 +1,39 @@
-# Stock Price Predictor LSTM
+# StockForecast-LSTM-Engine
 
-![License](https://img.shields.io/badge/license-MIT-blue)
-![Python](https://img.shields.io/badge/python-3.8%2B-blue)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange)
+![Python](https://img.shields.io/badge/python-3.8+-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+![Status](https://img.shields.io/badge/status-Active-success.svg)
 
-An advanced deep learning framework for predicting stock prices using Long Short-Term Memory (LSTM) and Bidirectional LSTM networks. Includes automated feature engineering of technical indicators and a beautiful Streamlit dashboard.
+## Description
+This project focuses on stock price predictor. It aims to provide a robust, efficient, and scalable solution using modern technologies and best practices in the field.
 
-## ⚠️ Financial Disclaimer
-**This project is for educational and research purposes only.** The predictions made by this model should not be considered financial advice. Stock markets are highly volatile, and predicting exact prices is inherently uncertain.
+## Key Features
+- High performance architecture
+- Extensible and modular design
+- Comprehensive data processing capabilities
+- Easy-to-use interface and quick setup
 
-## Features
-- **Deep Learning Models:** Standard LSTM and Bi-LSTM implementations.
-- **Technical Indicators:** Automatically calculates SMA, EMA, RSI, MACD, and Bollinger Bands as features.
-- **Walk-forward Validation:** Time-series aware data splitting.
-- **Interactive UI:** A Streamlit dashboard for real-time training and visualization.
-- **Data Pipeline:** Cached Yahoo Finance data fetching.
+## Tech Stack
+- LSTM\n- Bi-LSTM\n- yfinance\n- Plotly\n- Streamlit
 
-## Architecture
-Data Fetcher -> Feature Engineer (Tech Indicators) -> Sequence Generator -> LSTM/Bi-LSTM Network -> Evaluation/Visualization
-
-## Installation
+## Quick Start
 ```bash
+git clone https://github.com/iMuneebK/StockForecast-LSTM-Engine.git
+cd StockForecast-LSTM-Engine
 pip install -r requirements.txt
-streamlit run app.py
+python main.py
 ```
 
-## Interactive Demo
-Use the sidebar in the Streamlit app to select a ticker, adjust the sequence length, and pick a model architecture. View real-time training and interactive Plotly charts showing the difference between actual and predicted stock values.
+## Project Structure
+```
+StockForecast-LSTM-Engine/
+├── data/
+├── models/
+├── src/
+├── main.py
+├── requirements.txt
+└── README.md
+```
+
+## License
+This project is licensed under the MIT License.
